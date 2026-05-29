@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Open-source software and methods I build and maintain — from Bioconductor packages used by thousands to deep-learning libraries for spatial biology.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [software]
 horizontal: false
 ---
 

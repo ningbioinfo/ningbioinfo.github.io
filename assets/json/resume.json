@@ -1,221 +1,163 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Ning Liu",
+    "label": "Bioinformatician · Senior Postdoctoral Researcher",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "ning.liu@adelaide.edu.au",
+    "phone": "",
+    "url": "https://ningbioinfo.github.io",
+    "summary": "Bioinformatician at the University of Adelaide (Polo Lab, ACE & SAiGENCI). I develop computational methods and open-source tools for spatial and single-cell transcriptomics, epigenomics, and deep learning, and apply them to understand gene regulation in development, immunity, and disease.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Adelaide",
+      "region": "South Australia",
+      "countryCode": "AU"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "Ning Liu",
+        "url": "https://scholar.google.com/citations?user=EiG5GBEAAAAJ&hl=en"
+      },
+      {
+        "network": "GitHub",
+        "username": "ningbioinfo",
+        "url": "https://github.com/ningbioinfo"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "name": "University of Adelaide — Polo Lab (ACE & SAiGENCI)",
+      "position": "Senior Postdoctoral Researcher",
+      "location": "Adelaide, SA, Australia",
+      "startDate": "2023-10-01",
+      "endDate": "",
+      "summary": "Developing computational methods to study gene regulation across cell development using spatial, single-cell transcriptomics and epigenomics.",
+      "highlights": [
+        "Lead bioinformatics method and tool development across spatial and single-cell genomics projects.",
+        "Co-investigator on competitive grants (BioPlatforms Australia SA Framework; MRFF METASPATIAL).",
+        "Mentor PhD, graduate and undergraduate students; review grants and manuscripts."
+      ]
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
-    },
-    {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Walter and Eliza Hall Institute of Medical Research (WEHI)",
+      "position": "Research Officer",
+      "location": "Melbourne, VIC, Australia",
+      "startDate": "2021-05-01",
+      "endDate": "2023-10-01",
+      "summary": "Independent bioinformatics research and software development for spatial transcriptomics and functional genomics.",
+      "highlights": [
+        "Authored the standR Bioconductor package for GeoMx DSP spatial transcriptomics.",
+        "Published in peer-reviewed journals and presented at national and international meetings.",
+        "Applied for fellowships and research grants."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
+      "institution": "University of Adelaide",
+      "location": "Adelaide, SA, Australia",
+      "url": "https://www.adelaide.edu.au/",
+      "area": "Bioinformatics",
       "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
+      "startDate": "2017-01-01",
+      "endDate": "2021-10-01",
+      "score": "Dean's Commendation for Doctoral Thesis Excellence",
+      "courses": [
+        "Thesis: Three-dimensional regulation — establishing novel linkages between non-coding genetic variation and target genes."
+      ]
     },
     {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
-      "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
+      "institution": "University of Adelaide",
+      "location": "Adelaide, SA, Australia",
+      "url": "https://www.adelaide.edu.au/",
+      "area": "Bioinformatics",
+      "studyType": "Master of Science",
+      "startDate": "2015-01-01",
+      "endDate": "2017-07-01",
+      "score": "GPA 3.75 · Outstanding Academic Achievement Award (2015–16, 2016–17)",
+      "courses": [
+        "Thesis: Investigating computational analysis pipelines and genomic proximity interactions in T lymphocytes."
+      ]
+    },
+    {
+      "institution": "Xiamen University",
+      "location": "Xiamen, China",
+      "area": "Biotechnology",
+      "studyType": "Bachelor of Science",
+      "startDate": "2011-01-01",
+      "endDate": "2015-06-01",
+      "courses": ["C programming", "Biostatistics", "Genetics"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Dean's Commendation for Doctoral Thesis Excellence",
+      "date": "2021-01-01",
+      "awarder": "University of Adelaide"
     },
     {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
-      "summary": ""
-    }
-  ],
-  "certificates": [
+      "title": "Best Poster Talk, COMBINE Symposium",
+      "date": "2019-01-01",
+      "awarder": "ABACBS"
+    },
     {
-      "name": "Machine Learning",
+      "title": "ABACBS Conference Travel Grants",
+      "date": "2019-01-01",
+      "awarder": "ABACBS / Illumina (2018, 2019)"
+    },
+    {
+      "title": "EMBL Australia PhD Course Travel Grant",
       "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
+      "awarder": "EMBL Australia"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
-    },
-    {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "title": "Outstanding Academic Achievement Award",
+      "date": "2017-01-01",
+      "awarder": "University of Adelaide (2015–16 and 2016–17)"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "BioPlatforms Australia SA Framework Initiative",
+      "description": "Dissecting molecular mechanisms underpinning a new cytokine signalling axis governing leukaemia stemness. Co-Investigator. 2025–2026, $125,000.",
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01",
+      "url": "https://www.adelaide.edu.au/"
+    },
+    {
+      "name": "MRFF METASPATIAL Study (MRF2031100)",
+      "description": "Metabolic Spatial Analysis of Lung Cancer. Co-Investigator. Medical Research Future Fund. 2024–2028, $1,999,650.",
+      "startDate": "2024-01-01",
+      "endDate": "2028-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Genomics & single-cell",
+      "level": "Expert",
+      "keywords": ["Spatial transcriptomics (GeoMx, Visium, CosMx)", "Single-cell RNA-seq", "Epigenomics (ATAC, Hi-C, ChIP)", "Functional genomics"]
+    },
+    {
+      "name": "Computational & ML",
+      "level": "Expert",
+      "keywords": ["Deep learning", "Graph learning", "Statistical modelling", "Method development"]
+    },
+    {
+      "name": "Programming & tools",
+      "level": "Expert",
+      "keywords": ["R / Bioconductor", "Python / PyTorch", "Shell", "Git", "Nextflow", "Docker"]
+    }
+  ],
+  "publications": [],
+  "languages": [
+    { "language": "English", "fluency": "Professional working proficiency" },
+    { "language": "Mandarin Chinese", "fluency": "Native" }
+  ],
+  "interests": [
+    {
+      "name": "Research interests",
+      "keywords": ["Spatial & single-cell genomics", "Gene regulation", "3D genome organisation", "Deep learning for biology"]
     }
   ]
 }
