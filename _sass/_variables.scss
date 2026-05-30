@@ -1,13 +1,57 @@
-// ===========================================================================
-//  Ning Liu — Synthwave / Neo-Tokyo theme tokens
-//  (local override of gem defaults — see docs/CUSTOMIZE.md "Changing theme color")
-// ===========================================================================
+/*******************************************************************************
+ * Variables used throughout the theme.
+ * To adjust anything, simply edit the variables below and rebuild the theme.
+ ******************************************************************************/
 
-// Neon palette
-$sw-bg:        #0b0b1e; // deep near-black indigo
-$sw-bg-2:      #15132e; // panel / card
-$sw-text:      #e8e9f3; // off-white
-$sw-magenta:   #ff2a6d; // primary neon
-$sw-cyan:      #05d9e8; // secondary neon
-$sw-purple:    #b14aed;
-$sw-sunset:    #ff8c42;
+@use "sass:color";
+
+// ─────────────────────────────────────────────────────────────────────────
+//  SYNTHWAVE / NEO-TOKYO palette (Ning Liu)
+//  Neon magenta + cyan on deep indigo. Used by _themes.scss for both schemes.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Colors
+$red-color: #ff3636 !default;
+$red-color-dark: #ff2a6d !default;       // highlight -> neon magenta
+$orange-color: #ff8c42 !default;          // sunset accent
+$blue-color: #05d9e8 !default;            // neon cyan
+$blue-color-dark: #1f8aef !default;
+$cyan-color: #05d9e8 !default;            // neon cyan (dark-mode theme color)
+$light-cyan-color: color.adjust($cyan-color, $lightness: 18%);
+$green-color: #00ab37 !default;
+$green-color-lime: #b7d12a !default;
+$green-color-dark: #009f06 !default;
+$green-color-light: #ddffdd !default;
+$green-color-bright: #11d68b !default;
+$purple-color: #ff2a6d !default;          // primary theme color -> neon magenta
+$light-purple-color: #b14aed;             // neon purple
+$pink-color: #ff2a6d !default;
+$pink-color-light: #ffdddd !default;
+$yellow-color: #efcc00 !default;
+
+$grey-color: #9aa0c3 !default;            // muted lavender-grey
+$grey-color-light: #e8e9f3;               // off-white text
+$grey-color-dark: #0b0b1e;                // deep indigo background
+$grey-900: #15132e;                       // card background
+
+$white-color: #ffffff !default;
+$black-color: #0b0b1e !default;           // treat "black" as deep indigo
+
+// Theme colors
+
+$code-bg-color-light: #15132e;
+$code-bg-color-dark: #1b1740 !default;
+
+// Font awesome location
+$fa-font-path: "../webfonts";
+
+// Back To Top button config
+$back-to-top-z-index: 10;
+$back-to-top-bottom: 30px;
+$back-to-top-right: 30px;
+$back-to-top-diameter: 40px;
+$back-to-top-height: $back-to-top-diameter;
+$back-to-top-width: $back-to-top-diameter;
+
+// Max width default
+$max-content-width: 930px !default;

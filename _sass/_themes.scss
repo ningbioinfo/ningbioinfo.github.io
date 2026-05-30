@@ -1,161 +1,461 @@
-// ===========================================================================
-//  Ning Liu — Synthwave / Neo-Tokyo neo-cyberpunk theme
-//  CSS-only override layered on al-folio v1.x. Dark-first; both toggle states
-//  resolve to the same neon palette so the aesthetic never breaks.
-// ===========================================================================
+/*******************************************************************************
+ * Themes
+ ******************************************************************************/
+@use "variables" as v;
+@use "sass:color";
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap');
+:root {
+  color-scheme: light;
+  --global-bg-color: #{v.$white-color};
+  --global-code-bg-color: #{v.$code-bg-color-light};
+  --global-text-color: #{v.$black-color};
+  --global-text-color-light: #{v.$grey-color};
+  --global-theme-color: #{v.$purple-color};
+  --global-hover-color: #{v.$purple-color};
+  --global-hover-text-color: #{v.$white-color};
+  --global-footer-bg-color: #{v.$grey-color-dark};
+  --global-footer-text-color: #{v.$grey-color-light};
+  --global-footer-link-color: #{v.$white-color};
+  --global-distill-app-color: #{v.$grey-color};
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #{v.$white-color};
+  --global-highlight-color: #{v.$red-color-dark};
+  --global-back-to-top-bg-color: rgba(
+    #{color.channel(v.$black-color, "red", v.$space: rgb)},
+    #{color.channel(v.$black-color, "green", v.$space: rgb)},
+    #{color.channel(v.$black-color, "blue", v.$space: rgb)},
+    0.4
+  );
+  --global-back-to-top-text-color: #{v.$white-color};
+  --global-newsletter-bg-color: #{v.$white-color};
+  --global-newsletter-text-color: #{v.$black-color};
 
-// ---- Theme tokens (force synthwave regardless of light/dark toggle) ----
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  #light-toggle-system {
+    display: inline-block;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  .only-light {
+    display: block;
+  }
+
+  .only-dark {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+    bottom: v.$back-to-top-bottom;
+    right: v.$back-to-top-right;
+    height: v.$back-to-top-height;
+    width: v.$back-to-top-width;
+    z-index: v.$back-to-top-z-index;
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #{v.$grey-color-dark};
+  --global-code-bg-color: #{v.$code-bg-color-dark};
+  --global-text-color: #{v.$grey-color-light};
+  --global-text-color-light: #{v.$grey-color};
+  --global-theme-color: #{v.$cyan-color};
+  --global-hover-color: #{v.$cyan-color};
+  --global-hover-text-color: #{v.$white-color};
+  --global-footer-bg-color: #{v.$grey-color-light};
+  --global-footer-text-color: #{v.$grey-color-dark};
+  --global-footer-link-color: #{v.$black-color};
+  --global-distill-app-color: #{v.$grey-color-light};
+  --global-divider-color: #424246;
+  --global-card-bg-color: #{v.$grey-900};
+  --global-back-to-top-bg-color: rgba(
+    #{color.channel(v.$white-color, "red", v.$space: rgb)},
+    #{color.channel(v.$white-color, "green", v.$space: rgb)},
+    #{color.channel(v.$white-color, "blue", v.$space: rgb)},
+    0.5
+  );
+  --global-back-to-top-text-color: #{v.$black-color};
+  --global-newsletter-bg-color: #{v.$grey-color-light};
+  --global-newsletter-text-color: #{v.$grey-color-dark};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #215d42;
+  --global-tip-block-text: #beffe2;
+  --global-tip-block-title: #e2f5ec;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #6b5900;
+  --global-warning-block-text: #fff2af;
+  --global-warning-block-title: #fff8d8;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #600;
+  --global-danger-block-text: #ffb9b9;
+  --global-danger-block-title: #ffe0e0;
+
+  .only-light {
+    display: none;
+  }
+
+  .only-dark {
+    display: block;
+  }
+}
+
+html[data-theme-setting="dark"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: inline-block;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+  }
+}
+
+html[data-theme-setting="light"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: inline-block;
+  }
+}
+
+.fa-half-sun-moon {
+  position: relative;
+  display: inline-block;
+
+  --fa-font: var(--fa-font-solid);
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 1em;
+  height: 1em;
+}
+
+.fa-half-sun-moon::before,
+.fa-half-sun-moon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: -0.5px;
+  bottom: -0.5px;
+  text-align: center;
+  line-height: 1em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  font: var(--fa-font);
+}
+
+/* Left half: MOON */
+.fa-half-sun-moon::before {
+  content: "\f111";
+  color: var(--global-text-color);
+  clip-path: polygon(0 0, calc(50% - 0.5px) 0, calc(50% - 0.5px) 100%, 0 100%);
+}
+
+/* Right half: SUN */
+.fa-half-sun-moon::after {
+  content: "\f185";
+  color: var(--global-text-color);
+  clip-path: polygon(calc(50% + 0.5px) 0, 100% 0, 100% 100%, calc(50% + 0.5px) 100%);
+  right: -1.5px; /* slight overflow to avoid right-edge clipping */
+  transform: translateX(-1px); /* visually re-center the sun half */
+}
+
+#light-toggle:hover .fa-half-sun-moon::before {
+  color: var(--global-theme-color);
+}
+
+#light-toggle:hover .fa-half-sun-moon::after {
+  color: var(--global-theme-color);
+}
+
+/*******************************************************************************
+ * ░▒▓  SYNTHWAVE / NEO-TOKYO  —  Ning Liu custom skin  ▓▒░
+ * Forces the neon palette in BOTH light & dark so the aesthetic never breaks,
+ * adds Orbitron headings, an animated perspective grid hero, neon glows,
+ * and fixes the top spacing so the name clears the fixed navbar.
+ ******************************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap");
+
+// ---- Force neon tokens regardless of light/dark toggle ----
 :root,
 html,
 html[data-theme="light"],
 html[data-theme="dark"] {
-  --global-bg-color: #0b0b1e !important;
-  --global-text-color: #e8e9f3 !important;
-  --global-theme-color: #ff2a6d !important;   // neon magenta (links/accents)
-  --global-hover-color: #05d9e8 !important;    // neon cyan (hover)
-  --global-card-bg-color: #15132e !important;
-  --global-divider-color: rgba(255, 42, 109, 0.28) !important;
-  --global-code-bg-color: #1b1740 !important;
-  --global-footer-bg-color: #07061a !important;
-  --global-footer-text-color: #9aa0c3 !important;
+  --global-bg-color: #0b0b1e;
+  --global-text-color: #e8e9f3;
+  --global-text-color-light: #9aa0c3;
+  --global-theme-color: #ff2a6d; // neon magenta
+  --global-hover-color: #05d9e8; // neon cyan
+  --global-hover-text-color: #0b0b1e;
+  --global-code-bg-color: #15132e;
+  --global-card-bg-color: #15132e;
+  --global-divider-color: rgba(255, 42, 109, 0.28);
+  --global-footer-bg-color: #07061a;
+  --global-footer-text-color: #9aa0c3;
+  --global-footer-link-color: #05d9e8;
+  --global-highlight-color: #ff2a6d;
   color-scheme: dark;
 }
 
-// ---- Base ----
-html { scroll-behavior: smooth; }
-
+// ---- Base typography & background ----
 body {
-  background-color: #0b0b1e !important;
-  color: #e8e9f3 !important;
-  font-family: 'Exo 2', system-ui, sans-serif !important;
-  position: relative;
+  font-family: "Exo 2", system-ui, sans-serif;
+  background-color: #0b0b1e;
+  color: #e8e9f3;
 }
 
-// Animated neon sunset + perspective grid, fixed behind everything
+// Animated neon sunset glow + perspective grid, fixed behind content
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(120% 80% at 50% 120%, rgba(255, 42, 109, 0.35) 0%, transparent 55%),
-    radial-gradient(90% 60% at 50% 0%, rgba(177, 74, 237, 0.18) 0%, transparent 60%),
-    linear-gradient(180deg, #0b0b1e 0%, #140b2e 60%, #0b0b1e 100%);
   pointer-events: none;
+  background:
+    radial-gradient(120% 80% at 50% 118%, rgba(255, 42, 109, 0.38) 0%, transparent 55%),
+    radial-gradient(90% 60% at 50% -10%, rgba(177, 74, 237, 0.20) 0%, transparent 60%),
+    linear-gradient(180deg, #0b0b1e 0%, #140b2e 55%, #0b0b1e 100%);
 }
-
 body::after {
   content: "";
   position: fixed;
   left: -50%;
   right: -50%;
-  bottom: -10%;
-  height: 55vh;
+  bottom: -12%;
+  height: 58vh;
   z-index: -1;
+  pointer-events: none;
   background-image:
     linear-gradient(rgba(5, 217, 232, 0.35) 1px, transparent 1px),
     linear-gradient(90deg, rgba(5, 217, 232, 0.35) 1px, transparent 1px);
-  background-size: 44px 44px;
+  background-size: 46px 46px;
   transform: perspective(340px) rotateX(64deg);
   transform-origin: bottom center;
-  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 85%);
-  mask-image: linear-gradient(to top, #000 0%, transparent 85%);
+  mask-image: linear-gradient(to top, #000 0%, transparent 86%);
+  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 86%);
   animation: sw-grid 7s linear infinite;
-  pointer-events: none;
 }
 @keyframes sw-grid {
   from { background-position: 0 0, 0 0; }
-  to   { background-position: 0 44px, 44px 0; }
+  to   { background-position: 0 46px, 46px 0; }
 }
 
-// Subtle CRT scanlines over the whole page
-body > * { position: relative; }
-.sw-scan, body::selection { }
+// ---- Fix: give the page top room so the name clears the fixed navbar ----
+body.fixed-top-nav { padding-top: 0; }
+#content,
+.profile + *,
+.post,
+body > .container,
+.container.mt-5 {
+  margin-top: 0;
+}
+.post .post-header,
+.post-header {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+}
+.post-header .post-title,
+header.post-header h1 {
+  line-height: 1.18;
+  padding-top: 0.25rem;
+}
 
 // ---- Headings: neon display type ----
-h1, h2, h3, .post-title, .page-title, .profile + .col h1, header h1 {
-  font-family: 'Orbitron', 'Exo 2', sans-serif !important;
-  letter-spacing: 0.5px;
+h1, h2, h3,
+.post-title, .page-title, .category {
+  font-family: "Orbitron", "Exo 2", sans-serif;
+  letter-spacing: 0.4px;
 }
-h1, .post-title, .page-title {
-  color: #ffffff !important;
-  text-shadow: 0 0 8px rgba(255, 42, 109, 0.85), 0 0 22px rgba(255, 42, 109, 0.45);
+.post-title, h1 {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 42, 109, 0.85), 0 0 22px rgba(255, 42, 109, 0.40);
 }
-h2, h3 {
+h2, h3, .category {
   color: #05d9e8 !important;
-  text-shadow: 0 0 8px rgba(5, 217, 232, 0.45);
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.40);
 }
+.post-title .font-weight-bold { color: #ff2a6d; }
 
-// Site title / brand in navbar
-.navbar { background-color: rgba(11, 11, 30, 0.78) !important; backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255, 42, 109, 0.45); }
-.navbar .navbar-brand, .navbar .nav-link, .navbar a {
-  font-family: 'Orbitron', sans-serif !important;
+// ---- Navbar ----
+.navbar {
+  background-color: rgba(11, 11, 30, 0.82) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 42, 109, 0.45);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  font-family: "Orbitron", sans-serif;
   color: #e8e9f3 !important;
 }
-.navbar .nav-link:hover, .navbar a:hover { color: #05d9e8 !important; text-shadow: 0 0 8px rgba(5, 217, 232, 0.8); }
-
-// ---- Links ----
-a { color: #ff2a6d !important; text-decoration: none; transition: color .15s, text-shadow .15s; }
-a:hover { color: #05d9e8 !important; text-shadow: 0 0 8px rgba(5, 217, 232, 0.8); }
-
-// ---- Profile portrait: neon frame ----
-.profile img, img.profile-img, .profile .img-fluid {
-  border: 1px solid rgba(5, 217, 232, 0.7) !important;
-  border-radius: 10px !important;
-  box-shadow: 0 0 0 1px rgba(255, 42, 109, 0.5),
-              0 0 28px rgba(255, 42, 109, 0.45),
-              0 0 48px rgba(5, 217, 232, 0.3);
+.navbar .nav-link:hover {
+  color: #05d9e8 !important;
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.8);
 }
 
-// ---- Cards / panels (projects, selected papers, news) ----
-.card, .repo, .clickable, .projects .grid-item, .row .card {
-  background-color: rgba(21, 19, 46, 0.85) !important;
+// ---- Links ----
+a { color: #ff2a6d; transition: color 0.15s, text-shadow 0.15s; }
+a:hover { color: #05d9e8; text-shadow: 0 0 8px rgba(5, 217, 232, 0.8); }
+
+// ---- Profile portrait: neon frame ----
+.profile img {
+  border: 1px solid rgba(5, 217, 232, 0.7);
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 1px rgba(255, 42, 109, 0.5),
+    0 0 28px rgba(255, 42, 109, 0.45),
+    0 0 48px rgba(5, 217, 232, 0.30);
+}
+
+// ---- Cards / panels ----
+.card, .repo {
+  background-color: rgba(21, 19, 46, 0.88) !important;
   border: 1px solid rgba(177, 74, 237, 0.35) !important;
   border-radius: 10px !important;
   box-shadow: 0 0 18px rgba(177, 74, 237, 0.12);
-  transition: transform .15s, box-shadow .15s, border-color .15s;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
 }
-.card:hover, .repo:hover, .projects .grid-item:hover {
+.card:hover, .repo:hover {
   transform: translateY(-3px);
   border-color: rgba(5, 217, 232, 0.8) !important;
   box-shadow: 0 0 26px rgba(5, 217, 232, 0.35);
 }
 
-// ---- Publications / bibliography ----
-.publications .bibliography li .title { color: #ffffff !important; font-weight: 600; }
-.publications .bibliography li .author a.author-highlight,
-.publications .bibliography li .author .author-highlight,
-.bibliography .author strong { color: #05d9e8 !important; text-shadow: 0 0 6px rgba(5, 217, 232, 0.5); }
-.badge, .abbr abbr, abbr.badge, .bibliography .abbr abbr {
+// ---- Publications ----
+.publications .bibliography .title { color: #ffffff; font-weight: 600; }
+.publications .bibliography em { color: #05d9e8; font-style: normal; font-weight: 700; }
+.badge, abbr.badge, .abbr abbr {
   background: linear-gradient(135deg, #ff2a6d, #b14aed) !important;
   color: #fff !important;
   border: none !important;
-  box-shadow: 0 0 10px rgba(255, 42, 109, 0.5);
+  box-shadow: 0 0 10px rgba(255, 42, 109, 0.45);
 }
-// Author-role annotation (co-first / co-corresponding legend)
-.bibliography .annotation, .annotation { color: #ff8c42 !important; font-style: italic; }
+.abbr abbr a { color: #fff !important; }
+
+// ---- Buttons ----
+.btn, a.btn {
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(135deg, #ff2a6d, #b14aed) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 0 12px rgba(255, 42, 109, 0.45);
+}
+.btn:hover { box-shadow: 0 0 22px rgba(5, 217, 232, 0.7) !important; color: #fff !important; }
 
 // ---- Code ----
-code, pre, kbd { font-family: 'Share Tech Mono', monospace !important; }
-code { color: #05d9e8 !important; background: #1b1740 !important; }
+code, pre, kbd { font-family: "Share Tech Mono", monospace; }
+code { color: #05d9e8; }
 
-// ---- Horizontal rules / dividers ----
-hr { border-color: rgba(255, 42, 109, 0.3) !important; }
+// ---- Footer / dividers / selection ----
+footer.fixed-bottom, .footer { border-top: 1px solid rgba(5, 217, 232, 0.25); }
+hr { border-color: rgba(255, 42, 109, 0.3); }
+::selection { background: #ff2a6d; color: #fff; }
 
-// ---- Footer ----
-footer, .footer { background-color: #07061a !important; color: #9aa0c3 !important; border-top: 1px solid rgba(5, 217, 232, 0.25); }
-
-// ---- Buttons (CV download etc.) ----
-.btn, a.btn, button.btn {
-  font-family: 'Orbitron', sans-serif !important;
-  background: linear-gradient(135deg, #ff2a6d, #b14aed) !important;
-  border: none !important;
-  color: #fff !important;
+// ---- Publication stats header + sort toggle (custom) ----
+.pub-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0.5rem 0 1.5rem;
+}
+.pub-stats .stat {
+  flex: 1 1 120px;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 12px;
+  background: rgba(21, 19, 46, 0.88);
+  border: 1px solid rgba(255, 42, 109, 0.35);
+  box-shadow: 0 0 18px rgba(255, 42, 109, 0.12);
+}
+.pub-stats .stat .num {
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #05d9e8;
+  text-shadow: 0 0 10px rgba(5, 217, 232, 0.6);
+  line-height: 1.1;
+}
+.pub-stats .stat .lbl {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9aa0c3;
+  margin-top: 4px;
+}
+.pub-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.2rem;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.85rem;
+}
+.pub-sort .lbl { color: #9aa0c3; }
+.pub-sort button {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #e8e9f3;
+  background: transparent;
+  border: 1px solid rgba(5, 217, 232, 0.5);
+  transition: all 0.15s;
+}
+.pub-sort button.active,
+.pub-sort button:hover {
+  background: linear-gradient(135deg, #ff2a6d, #b14aed);
+  border-color: transparent;
   box-shadow: 0 0 14px rgba(255, 42, 109, 0.5);
 }
-.btn:hover { box-shadow: 0 0 22px rgba(5, 217, 232, 0.7) !important; }
-
-// ---- Selection ----
-::selection { background: #ff2a6d; color: #fff; }
+.pub-cite {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.74rem;
+  color: #ff8c42;
+  white-space: nowrap;
+}
+.pub-cite::before { content: "★ "; }

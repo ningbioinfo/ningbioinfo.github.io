@@ -6,7 +6,7 @@ subtitle: Bioinformatician · <a href='https://www.adelaide.edu.au/'>Polo Lab, A
 
 profile:
   align: right
-  image: prof_pic.png
+  image: ning_portrait.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Adelaide, South Australia</p>
