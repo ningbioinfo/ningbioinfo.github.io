@@ -12,7 +12,7 @@ profile:
     <p>Adelaide, South Australia</p>
     <p>ning.liu@adelaide.edu.au</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -33,3 +33,20 @@ My work spans the full arc from method to mechanism: developing open-source soft
 I completed my PhD in Bioinformatics at the University of Adelaide (Dean's Commendation for Doctoral Thesis Excellence), and previously worked as a Research Officer at WEHI in Melbourne. I'm an active member of Australia's bioinformatics community (ABACBS / COMBINE) and enjoy mentoring students and teaching.
 
 Take a look at my [publications](/publications/), my [software & projects](/projects/), or my full [CV](/cv/) — and feel free to get in touch.
+
+## Research interests
+
+<div class="research-interests">
+  <div class="ri-card">
+    <h3>Gene expression controlling cell changes</h3>
+    <p>I study how gene-regulatory programs drive cells to switch identity and state — across development, reprogramming, and disease. By integrating transcriptomic and epigenomic readouts, I aim to pinpoint the regulators and circuits that push a cell from one fate to the next.</p>
+  </div>
+  <div class="ri-card">
+    <h3>AI in epigenomics and transcriptomics</h3>
+    <p>I develop deep-learning and graph-based models that learn from large-scale epigenomic and transcriptomic data — to predict regulatory activity, capture structure in the genome and cells, and turn high-dimensional measurements into interpretable biological insight.</p>
+  </div>
+  <div class="ri-card">
+    <h3>Spatial-omics method development</h3>
+    <p>I build open-source tools and statistical methods for spatial transcriptomics, from quality control and normalisation to neighbourhood and tissue-structure analysis — so that biologists can read gene expression in its native spatial context.</p>
+  </div>
+</div>

@@ -8,5 +8,6 @@ category: software
 
 **scider** performs density-based spatial analysis of single-cell and spatial data, preserving tissue structure to detect cell-type density regions, colocalisation, and spatial relationships across a tissue section.
 
-- 📄 Preprint (2025)
-- 📦 [Bioconductor package](https://bioconductor.org/packages/scider)
+- 📄 Preprint (2025) — co-first author
+- 📦 [Bioconductor](https://bioconductor.org/packages/scider)
+- 💻 [GitHub](https://github.com/ChenLaboratory/scider)

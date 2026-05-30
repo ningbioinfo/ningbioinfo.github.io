@@ -459,3 +459,89 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
   white-space: nowrap;
 }
 .pub-cite::before { content: "★ "; }
+
+// ---- Fix: contact info text under profile photo was too dim ----
+.more-info,
+.more-info p,
+.profile .more-info {
+  color: #e8e9f3 !important;
+}
+.profile .more-info p { opacity: 0.92; }
+// CV "Contact Information" table used light-grey text — brighten it
+.cv .table-cv td.font-weight-light,
+.cv .table-cv .font-weight-light,
+.cv .card .font-weight-light { color: #e8e9f3 !important; }
+.cv .card-title { color: #05d9e8 !important; }
+
+// ---- Research-interest cards on the About page ----
+.research-interests {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  .research-interests { grid-template-columns: repeat(3, 1fr); }
+}
+.research-interests .ri-card {
+  padding: 18px 16px;
+  border-radius: 12px;
+  background: rgba(21, 19, 46, 0.85);
+  border: 1px solid rgba(177, 74, 237, 0.35);
+  box-shadow: 0 0 18px rgba(177, 74, 237, 0.12);
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+.research-interests .ri-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(5, 217, 232, 0.8);
+  box-shadow: 0 0 26px rgba(5, 217, 232, 0.35);
+}
+.research-interests .ri-card h3 {
+  font-size: 1.0rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #05d9e8 !important;
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.4);
+}
+.research-interests .ri-card p {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #cfd2e6;
+  margin: 0;
+}
+
+// ---- CRT scanline overlay (subtle, whole viewport) ----
+html::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(5, 217, 232, 0.035) 3px,
+    rgba(0, 0, 0, 0.06) 4px
+  );
+  mix-blend-mode: overlay;
+}
+
+// ---- Katakana hero accent (リュウ・ニン = "Ryū Nin") ----
+.post > .post-header { position: relative; }
+.post > .post-header::after {
+  content: "リュウ・ニン";
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+  writing-mode: vertical-rl;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  color: rgba(5, 217, 232, 0.55);
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.5);
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .post > .post-header::after { display: none; }
+}

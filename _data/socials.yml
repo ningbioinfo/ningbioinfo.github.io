@@ -4,5 +4,5 @@ cv_pdf: /assets/pdf/Ning_Liu_CV_full.pdf # path to your CV PDF file
 email: ning.liu@adelaide.edu.au # your email address
 scholar_userid: EiG5GBEAAAAJ # your Google Scholar ID
 github_username: ningbioinfo # your GitHub username
+orcid_id: 0000-0002-9487-9305 # your ORCID ID
 rss_icon: true # comment this line to hide the RSS icon
-# orcid_id: # add your ORCID ID here to show the ORCID icon
