@@ -61,9 +61,7 @@
       "startDate": "2017-01-01",
       "endDate": "2021-10-01",
       "score": "Dean's Commendation for Doctoral Thesis Excellence",
-      "courses": [
-        "Thesis: Three-dimensional regulation — establishing novel linkages between non-coding genetic variation and target genes."
-      ]
+      "courses": ["Thesis: Three-dimensional regulation — establishing novel linkages between non-coding genetic variation and target genes."]
     },
     {
       "institution": "University of Adelaide",
@@ -74,9 +72,7 @@
       "startDate": "2015-01-01",
       "endDate": "2017-07-01",
       "score": "GPA 3.75 · Outstanding Academic Achievement Award (2015–16, 2016–17)",
-      "courses": [
-        "Thesis: Investigating computational analysis pipelines and genomic proximity interactions in T lymphocytes."
-      ]
+      "courses": ["Thesis: Investigating computational analysis pipelines and genomic proximity interactions in T lymphocytes."]
     },
     {
       "institution": "Xiamen University",

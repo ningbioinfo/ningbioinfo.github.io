@@ -83,22 +83,28 @@
 
     if (mode === "cite") {
       // hide year-grouped view, show flat sorted-by-citations list
-      byYear.forEach(function (el) { el.style.display = "none"; });
-      flat.innerHTML = "";
-      ITEMS.slice().sort(function (a, b) {
-        var ca = a.cites == null ? -1 : a.cites;
-        var cb = b.cites == null ? -1 : b.cites;
-        if (cb !== ca) return cb - ca;
-        return a.year && b.year ? b.year - a.year : 0;
-      }).forEach(function (it) {
-        flat.appendChild(it.li.cloneNode(true));
+      byYear.forEach(function (el) {
+        el.style.display = "none";
       });
+      flat.innerHTML = "";
+      ITEMS.slice()
+        .sort(function (a, b) {
+          var ca = a.cites == null ? -1 : a.cites;
+          var cb = b.cites == null ? -1 : b.cites;
+          if (cb !== ca) return cb - ca;
+          return a.year && b.year ? b.year - a.year : 0;
+        })
+        .forEach(function (it) {
+          flat.appendChild(it.li.cloneNode(true));
+        });
       flat.style.display = "";
       bC.classList.add("active");
       bY.classList.remove("active");
     } else {
       flat.style.display = "none";
-      byYear.forEach(function (el) { el.style.display = ""; });
+      byYear.forEach(function (el) {
+        el.style.display = "";
+      });
       bY.classList.add("active");
       bC.classList.remove("active");
     }
