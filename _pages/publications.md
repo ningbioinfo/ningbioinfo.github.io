@@ -10,6 +10,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 {% assign cit = site.data.citations.metadata %}
+
 <div class="pub-stats">
   <div class="stat">
     <span class="num" id="pub-count">—</span>
@@ -36,6 +37,7 @@ nav_order: 2
 </div>
 
 <!-- Bibsearch Feature -->
+
 {% include bib_search.liquid %}
 
 <div class="publications">

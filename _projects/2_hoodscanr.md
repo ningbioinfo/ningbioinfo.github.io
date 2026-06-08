@@ -8,6 +8,6 @@ category: software
 
 **hoodscanR** profiles single-cell neighbourhoods ("hoods") in spatial transcriptomics data, quantifying cellular co-localisation and tissue micro-architecture to reveal spatial organisation that bulk analyses miss.
 
-- 📄 Preprint (under review, *Bioinformatics*)
+- 📄 Preprint (under review, _Bioinformatics_)
 - 📦 [Bioconductor](https://bioconductor.org/packages/hoodscanR)
 - 💻 [GitHub](https://github.com/DavisLaboratory/hoodscanR)

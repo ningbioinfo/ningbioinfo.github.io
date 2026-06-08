@@ -253,8 +253,7 @@ body::before {
   pointer-events: none;
   background:
     radial-gradient(120% 80% at 50% 118%, rgba(255, 42, 109, 0.38) 0%, transparent 55%),
-    radial-gradient(90% 60% at 50% -10%, rgba(177, 74, 237, 0.20) 0%, transparent 60%),
-    linear-gradient(180deg, #0b0b1e 0%, #140b2e 55%, #0b0b1e 100%);
+    radial-gradient(90% 60% at 50% -10%, rgba(177, 74, 237, 0.2) 0%, transparent 60%), linear-gradient(180deg, #0b0b1e 0%, #140b2e 55%, #0b0b1e 100%);
 }
 body::after {
   content: "";
@@ -266,8 +265,7 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(5, 217, 232, 0.35) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(5, 217, 232, 0.35) 1px, transparent 1px);
+    linear-gradient(rgba(5, 217, 232, 0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(5, 217, 232, 0.35) 1px, transparent 1px);
   background-size: 46px 46px;
   transform: perspective(340px) rotateX(64deg);
   transform-origin: bottom center;
@@ -276,12 +274,22 @@ body::after {
   animation: sw-grid 7s linear infinite;
 }
 @keyframes sw-grid {
-  from { background-position: 0 0, 0 0; }
-  to   { background-position: 0 46px, 46px 0; }
+  from {
+    background-position:
+      0 0,
+      0 0;
+  }
+  to {
+    background-position:
+      0 46px,
+      46px 0;
+  }
 }
 
 // ---- Fix: give the page top room so the name clears the fixed navbar ----
-body.fixed-top-nav { padding-top: 0; }
+body.fixed-top-nav {
+  padding-top: 0;
+}
 #content,
 .profile + *,
 .post,
@@ -301,20 +309,31 @@ header.post-header h1 {
 }
 
 // ---- Headings: neon display type ----
-h1, h2, h3,
-.post-title, .page-title, .category {
+h1,
+h2,
+h3,
+.post-title,
+.page-title,
+.category {
   font-family: "Orbitron", "Exo 2", sans-serif;
   letter-spacing: 0.4px;
 }
-.post-title, h1 {
+.post-title,
+h1 {
   color: #ffffff;
-  text-shadow: 0 0 8px rgba(255, 42, 109, 0.85), 0 0 22px rgba(255, 42, 109, 0.40);
+  text-shadow:
+    0 0 8px rgba(255, 42, 109, 0.85),
+    0 0 22px rgba(255, 42, 109, 0.4);
 }
-h2, h3, .category {
+h2,
+h3,
+.category {
   color: #05d9e8 !important;
-  text-shadow: 0 0 8px rgba(5, 217, 232, 0.40);
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.4);
 }
-.post-title .font-weight-bold { color: #ff2a6d; }
+.post-title .font-weight-bold {
+  color: #ff2a6d;
+}
 
 // ---- Navbar ----
 .navbar {
@@ -333,8 +352,16 @@ h2, h3, .category {
 }
 
 // ---- Links ----
-a { color: #ff2a6d; transition: color 0.15s, text-shadow 0.15s; }
-a:hover { color: #05d9e8; text-shadow: 0 0 8px rgba(5, 217, 232, 0.8); }
+a {
+  color: #ff2a6d;
+  transition:
+    color 0.15s,
+    text-shadow 0.15s;
+}
+a:hover {
+  color: #05d9e8;
+  text-shadow: 0 0 8px rgba(5, 217, 232, 0.8);
+}
 
 // ---- Profile portrait: neon frame ----
 .profile img {
@@ -343,52 +370,86 @@ a:hover { color: #05d9e8; text-shadow: 0 0 8px rgba(5, 217, 232, 0.8); }
   box-shadow:
     0 0 0 1px rgba(255, 42, 109, 0.5),
     0 0 28px rgba(255, 42, 109, 0.45),
-    0 0 48px rgba(5, 217, 232, 0.30);
+    0 0 48px rgba(5, 217, 232, 0.3);
 }
 
 // ---- Cards / panels ----
-.card, .repo {
+.card,
+.repo {
   background-color: rgba(21, 19, 46, 0.88) !important;
   border: 1px solid rgba(177, 74, 237, 0.35) !important;
   border-radius: 10px !important;
   box-shadow: 0 0 18px rgba(177, 74, 237, 0.12);
-  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    border-color 0.15s;
 }
-.card:hover, .repo:hover {
+.card:hover,
+.repo:hover {
   transform: translateY(-3px);
   border-color: rgba(5, 217, 232, 0.8) !important;
   box-shadow: 0 0 26px rgba(5, 217, 232, 0.35);
 }
 
 // ---- Publications ----
-.publications .bibliography .title { color: #ffffff; font-weight: 600; }
-.publications .bibliography em { color: #05d9e8; font-style: normal; font-weight: 700; }
-.badge, abbr.badge, .abbr abbr {
+.publications .bibliography .title {
+  color: #ffffff;
+  font-weight: 600;
+}
+.publications .bibliography em {
+  color: #05d9e8;
+  font-style: normal;
+  font-weight: 700;
+}
+.badge,
+abbr.badge,
+.abbr abbr {
   background: linear-gradient(135deg, #ff2a6d, #b14aed) !important;
   color: #fff !important;
   border: none !important;
   box-shadow: 0 0 10px rgba(255, 42, 109, 0.45);
 }
-.abbr abbr a { color: #fff !important; }
+.abbr abbr a {
+  color: #fff !important;
+}
 
 // ---- Buttons ----
-.btn, a.btn {
+.btn,
+a.btn {
   font-family: "Orbitron", sans-serif;
   background: linear-gradient(135deg, #ff2a6d, #b14aed) !important;
   border: none !important;
   color: #fff !important;
   box-shadow: 0 0 12px rgba(255, 42, 109, 0.45);
 }
-.btn:hover { box-shadow: 0 0 22px rgba(5, 217, 232, 0.7) !important; color: #fff !important; }
+.btn:hover {
+  box-shadow: 0 0 22px rgba(5, 217, 232, 0.7) !important;
+  color: #fff !important;
+}
 
 // ---- Code ----
-code, pre, kbd { font-family: "Share Tech Mono", monospace; }
-code { color: #05d9e8; }
+code,
+pre,
+kbd {
+  font-family: "Share Tech Mono", monospace;
+}
+code {
+  color: #05d9e8;
+}
 
 // ---- Footer / dividers / selection ----
-footer.fixed-bottom, .footer { border-top: 1px solid rgba(5, 217, 232, 0.25); }
-hr { border-color: rgba(255, 42, 109, 0.3); }
-::selection { background: #ff2a6d; color: #fff; }
+footer.fixed-bottom,
+.footer {
+  border-top: 1px solid rgba(5, 217, 232, 0.25);
+}
+hr {
+  border-color: rgba(255, 42, 109, 0.3);
+}
+::selection {
+  background: #ff2a6d;
+  color: #fff;
+}
 
 // ---- Publication stats header + sort toggle (custom) ----
 .pub-stats {
@@ -431,7 +492,9 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
   font-family: "Share Tech Mono", monospace;
   font-size: 0.85rem;
 }
-.pub-sort .lbl { color: #9aa0c3; }
+.pub-sort .lbl {
+  color: #9aa0c3;
+}
 .pub-sort button {
   font-family: "Orbitron", sans-serif;
   font-size: 0.72rem;
@@ -458,7 +521,9 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
   color: #ff8c42;
   white-space: nowrap;
 }
-.pub-cite::before { content: "★ "; }
+.pub-cite::before {
+  content: "★ ";
+}
 
 // ---- Fix: contact info text under profile photo was too dim ----
 .more-info,
@@ -466,12 +531,18 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
 .profile .more-info {
   color: #e8e9f3 !important;
 }
-.profile .more-info p { opacity: 0.92; }
+.profile .more-info p {
+  opacity: 0.92;
+}
 // CV "Contact Information" table used light-grey text — brighten it
 .cv .table-cv td.font-weight-light,
 .cv .table-cv .font-weight-light,
-.cv .card .font-weight-light { color: #e8e9f3 !important; }
-.cv .card-title { color: #05d9e8 !important; }
+.cv .card .font-weight-light {
+  color: #e8e9f3 !important;
+}
+.cv .card-title {
+  color: #05d9e8 !important;
+}
 
 // ---- Research-interest cards on the About page ----
 .research-interests {
@@ -481,7 +552,9 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
   margin-top: 0.5rem;
 }
 @media (min-width: 768px) {
-  .research-interests { grid-template-columns: repeat(3, 1fr); }
+  .research-interests {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .research-interests .ri-card {
   padding: 18px 16px;
@@ -489,7 +562,10 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
   background: rgba(21, 19, 46, 0.85);
   border: 1px solid rgba(177, 74, 237, 0.35);
   box-shadow: 0 0 18px rgba(177, 74, 237, 0.12);
-  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    border-color 0.15s;
 }
 .research-interests .ri-card:hover {
   transform: translateY(-3px);
@@ -497,7 +573,7 @@ hr { border-color: rgba(255, 42, 109, 0.3); }
   box-shadow: 0 0 26px rgba(5, 217, 232, 0.35);
 }
 .research-interests .ri-card h3 {
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: #05d9e8 !important;
@@ -517,18 +593,14 @@ html::after {
   inset: 0;
   z-index: 9998;
   pointer-events: none;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0px,
-    rgba(0, 0, 0, 0) 2px,
-    rgba(5, 217, 232, 0.035) 3px,
-    rgba(0, 0, 0, 0.06) 4px
-  );
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 2px, rgba(5, 217, 232, 0.035) 3px, rgba(0, 0, 0, 0.06) 4px);
   mix-blend-mode: overlay;
 }
 
 // ---- Katakana hero accent (リュウ・ニン = "Ryū Nin") ----
-.post > .post-header { position: relative; }
+.post > .post-header {
+  position: relative;
+}
 .post > .post-header::after {
   content: "リュウ・ニン";
   position: absolute;
@@ -543,5 +615,7 @@ html::after {
   pointer-events: none;
 }
 @media (max-width: 600px) {
-  .post > .post-header::after { display: none; }
+  .post > .post-header::after {
+    display: none;
+  }
 }

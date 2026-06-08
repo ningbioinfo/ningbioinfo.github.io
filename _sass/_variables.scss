@@ -12,30 +12,30 @@
 
 // Colors
 $red-color: #ff3636 !default;
-$red-color-dark: #ff2a6d !default;       // highlight -> neon magenta
-$orange-color: #ff8c42 !default;          // sunset accent
-$blue-color: #05d9e8 !default;            // neon cyan
+$red-color-dark: #ff2a6d !default; // highlight -> neon magenta
+$orange-color: #ff8c42 !default; // sunset accent
+$blue-color: #05d9e8 !default; // neon cyan
 $blue-color-dark: #1f8aef !default;
-$cyan-color: #05d9e8 !default;            // neon cyan (dark-mode theme color)
+$cyan-color: #05d9e8 !default; // neon cyan (dark-mode theme color)
 $light-cyan-color: color.adjust($cyan-color, $lightness: 18%);
 $green-color: #00ab37 !default;
 $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
-$purple-color: #ff2a6d !default;          // primary theme color -> neon magenta
-$light-purple-color: #b14aed;             // neon purple
+$purple-color: #ff2a6d !default; // primary theme color -> neon magenta
+$light-purple-color: #b14aed; // neon purple
 $pink-color: #ff2a6d !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
-$grey-color: #9aa0c3 !default;            // muted lavender-grey
-$grey-color-light: #e8e9f3;               // off-white text
-$grey-color-dark: #0b0b1e;                // deep indigo background
-$grey-900: #15132e;                       // card background
+$grey-color: #9aa0c3 !default; // muted lavender-grey
+$grey-color-light: #e8e9f3; // off-white text
+$grey-color-dark: #0b0b1e; // deep indigo background
+$grey-900: #15132e; // card background
 
 $white-color: #ffffff !default;
-$black-color: #0b0b1e !default;           // treat "black" as deep indigo
+$black-color: #0b0b1e !default; // treat "black" as deep indigo
 
 // Theme colors
 
