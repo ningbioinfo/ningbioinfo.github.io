@@ -1,6 +1,6 @@
 metadata:
-  last_updated: '2026-05-30'
-  total_citations: 460
+  last_updated: '2026-06-14'
+  total_citations: 466
   hindex: 10
   i10index: 11
 papers:
@@ -9,11 +9,11 @@ papers:
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 78
+    citations: 81
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 47
+    citations: 48
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
@@ -87,6 +87,16 @@ papers:
     title: Quality control measures for placental sample purity in DNA methylation
       array analyses
     year: '2019'
+  EiG5GBEAAAAJ:Wp0gIr-vW9MC:
+    citations: 1
+    title: 'cellNexus: Quality control, annotation, aggregation and analytical layers
+      for the Human Cell Atlas data'
+    year: '2026'
+  EiG5GBEAAAAJ:YOwf2qJgpHMC:
+    citations: 1
+    title: Graph-based RNA structural representation reveals determinants of subcellular
+      localization
+    year: '2026'
   EiG5GBEAAAAJ:5nxA0vEk-isC:
     citations: 1
     title: Spatial profiling of the tumor microenvironment in head and neck squamous
@@ -105,20 +115,10 @@ papers:
       in head and neck cancer identifies tissue signatures associated with therapy
       response
     year: '2022'
-  EiG5GBEAAAAJ:Wp0gIr-vW9MC:
-    citations: 0
-    title: 'cellNexus: Quality control, annotation, aggregation and analytical layers
-      for the Human Cell Atlas data'
-    year: '2026'
   EiG5GBEAAAAJ:_kc_bZDykSQC:
     citations: 0
     title: Integrative epigenomic and transcriptomic profiling reveals dysregulated
       T cell regulatory networks in Stage 3 Type 1 diabetes
-    year: '2026'
-  EiG5GBEAAAAJ:YOwf2qJgpHMC:
-    citations: 0
-    title: Graph-based RNA structural representation reveals determinants of subcellular
-      localization
     year: '2026'
   EiG5GBEAAAAJ:ULOm3_A8WrAC:
     citations: 0

@@ -1,10 +1,13 @@
 name: Update Google Scholar Citations
 
+# NOTE: The scheduled scrape is DISABLED because Google Scholar blocks GitHub
+# Actions' datacenter IPs — every scheduled run times out (exit 124) and never
+# updates the data, while still reporting "success" (the script runs under
+# `set +e`). Update citations locally instead, from a residential IP:
+#     python3 bin/update_citations_local.py
+#     git add _data/citations.yml && git commit -m "Update citations" && git push
+# This workflow is kept for manual runs only (in case Scholar access changes).
 on:
-  schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
 permissions:
