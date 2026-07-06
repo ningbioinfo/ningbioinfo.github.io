@@ -12,7 +12,10 @@
 # ---------------------------------------------------------------------------
 set -uo pipefail
 
-REPO="/Users/a1692215/Documents/ningbioinfo.github.io"
+# Repo root = the parent of this script's bin/ directory (self-locating, so the
+# script works from the ~/Documents copy or the dedicated ~/.scholar-sync clone).
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO="$(cd "$SCRIPT_DIR/.." && pwd)"
 PYTHON="/Users/a1692215/miniconda3/bin/python3"
 LOG="$REPO/bin/sync_citations.log"
 
@@ -20,7 +23,10 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 
 cd "$REPO" || { log "ERROR: repo not found at $REPO"; exit 1; }
 
-log "=== sync start ==="
+log "=== sync start (repo: $REPO) ==="
+
+# Stay current with any changes pushed from the editing copy before we modify.
+git pull --rebase --autostash origin main >> "$LOG" 2>&1 || log "WARN: git pull failed; continuing."
 
 # 1. Refresh the data file from Google Scholar (writes _data/citations.yml)
 if ! "$PYTHON" bin/update_citations_local.py >> "$LOG" 2>&1; then
