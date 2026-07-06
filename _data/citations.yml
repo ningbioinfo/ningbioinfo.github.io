@@ -1,19 +1,19 @@
 metadata:
-  last_updated: '2026-06-14'
-  total_citations: 466
+  last_updated: '2026-07-06'
+  total_citations: 478
   hindex: 10
   i10index: 11
 papers:
   EiG5GBEAAAAJ:Se3iqnhoufwC:
-    citations: 93
+    citations: 99
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 81
+    citations: 82
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 48
+    citations: 49
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
@@ -22,13 +22,13 @@ papers:
       DNA Damage
     year: '2023'
   EiG5GBEAAAAJ:eQOLeE2rZwMC:
-    citations: 35
+    citations: 36
     title: Compartmentalized spatial profiling of the tumor microenvironment in head
       and neck squamous cell carcinoma identifies immune checkpoint molecules and
       tumor necrosis factor …
     year: '2023'
   EiG5GBEAAAAJ:kNdYIx-mwKoC:
-    citations: 32
+    citations: 33
     title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
       insights into immunotherapy response'
     year: '2024'
@@ -37,18 +37,18 @@ papers:
     title: 'vissE: a versatile tool to identify and visualise higher-order molecular
       phenotypes from functional enrichment analysis'
     year: '2024'
+  EiG5GBEAAAAJ:2osOgNQ5qMEC:
+    citations: 23
+    title: 'Molecular insights into regulatory T-cell adaptation to self, environment,
+      and host tissues: Plasticity or loss of function in autoimmune disease'
+    year: '2020'
   EiG5GBEAAAAJ:IjCSPb-OGe4C:
     citations: 22
     title: 'Seeing the forest through the trees: prioritising potentially functional
       interactions from Hi-C'
     year: '2021'
-  EiG5GBEAAAAJ:2osOgNQ5qMEC:
-    citations: 22
-    title: 'Molecular insights into regulatory T-cell adaptation to self, environment,
-      and host tissues: Plasticity or loss of function in autoimmune disease'
-    year: '2020'
   EiG5GBEAAAAJ:Y0pCki6q_DkC:
-    citations: 16
+    citations: 17
     title: Parallel recovery of chromatin accessibility and gene expression dynamics
       from frozen human regulatory T cells
     year: '2023'
@@ -87,15 +87,15 @@ papers:
     title: Quality control measures for placental sample purity in DNA methylation
       array analyses
     year: '2019'
-  EiG5GBEAAAAJ:Wp0gIr-vW9MC:
-    citations: 1
-    title: 'cellNexus: Quality control, annotation, aggregation and analytical layers
-      for the Human Cell Atlas data'
-    year: '2026'
   EiG5GBEAAAAJ:YOwf2qJgpHMC:
     citations: 1
     title: Graph-based RNA structural representation reveals determinants of subcellular
       localization
+    year: '2026'
+  EiG5GBEAAAAJ:Wp0gIr-vW9MC:
+    citations: 1
+    title: 'cellNexus: Quality control, annotation, aggregation and analytical layers
+      for the Human Cell Atlas data'
     year: '2026'
   EiG5GBEAAAAJ:5nxA0vEk-isC:
     citations: 1
