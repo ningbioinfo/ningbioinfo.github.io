@@ -1,6 +1,6 @@
 metadata:
-  last_updated: '2026-07-20'
-  total_citations: 482
+  last_updated: '2026-07-27'
+  total_citations: 484
   hindex: 10
   i10index: 11
 papers:
@@ -9,7 +9,7 @@ papers:
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 85
+    citations: 87
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
@@ -32,23 +32,23 @@ papers:
     title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
       insights into immunotherapy response'
     year: '2024'
+  EiG5GBEAAAAJ:2osOgNQ5qMEC:
+    citations: 24
+    title: 'Molecular insights into regulatory T-cell adaptation to self, environment,
+      and host tissues: Plasticity or loss of function in autoimmune disease'
+    year: '2020'
   EiG5GBEAAAAJ:zYLM7Y9cAGgC:
     citations: 23
     title: 'vissE: a versatile tool to identify and visualise higher-order molecular
       phenotypes from functional enrichment analysis'
     year: '2024'
-  EiG5GBEAAAAJ:2osOgNQ5qMEC:
-    citations: 23
-    title: 'Molecular insights into regulatory T-cell adaptation to self, environment,
-      and host tissues: Plasticity or loss of function in autoimmune disease'
-    year: '2020'
   EiG5GBEAAAAJ:IjCSPb-OGe4C:
     citations: 22
     title: 'Seeing the forest through the trees: prioritising potentially functional
       interactions from Hi-C'
     year: '2021'
   EiG5GBEAAAAJ:Y0pCki6q_DkC:
-    citations: 17
+    citations: 16
     title: Parallel recovery of chromatin accessibility and gene expression dynamics
       from frozen human regulatory T cells
     year: '2023'
