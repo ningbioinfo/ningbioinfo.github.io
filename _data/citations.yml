@@ -1,15 +1,15 @@
 metadata:
-  last_updated: '2026-07-27'
-  total_citations: 484
+  last_updated: '2026-08-03'
+  total_citations: 485
   hindex: 10
   i10index: 11
 papers:
   EiG5GBEAAAAJ:Se3iqnhoufwC:
-    citations: 99
+    citations: 98
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 87
+    citations: 88
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
@@ -17,7 +17,7 @@ papers:
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
-    citations: 42
+    citations: 41
     title: Transcriptomic profiling of cardiac tissues from SARS‐CoV‐2 patients identifies
       DNA Damage
     year: '2023'
@@ -48,7 +48,7 @@ papers:
       interactions from Hi-C'
     year: '2021'
   EiG5GBEAAAAJ:Y0pCki6q_DkC:
-    citations: 16
+    citations: 17
     title: Parallel recovery of chromatin accessibility and gene expression dynamics
       from frozen human regulatory T cells
     year: '2023'
@@ -68,7 +68,7 @@ papers:
       SARS-CoV-2 infection
     year: '2024'
   EiG5GBEAAAAJ:hqOjcs7Dif8C:
-    citations: 7
+    citations: 6
     title: Topologically associating domains in the POLLED region are the same for
       Angus‐and Brahman‐specific Hi‐C reads from F1 hybrid fetal tissue
     year: '2023'
@@ -87,6 +87,11 @@ papers:
     title: Quality control measures for placental sample purity in DNA methylation
       array analyses
     year: '2019'
+  EiG5GBEAAAAJ:-f6ydRqryjwC:
+    citations: 1
+    title: DNA methylation reprogramming in marsupial embryos is restricted to the
+      extraembryonic lineage
+    year: '2026'
   EiG5GBEAAAAJ:YOwf2qJgpHMC:
     citations: 1
     title: Graph-based RNA structural representation reveals determinants of subcellular
@@ -97,6 +102,11 @@ papers:
     title: 'cellNexus: Quality control, annotation, aggregation and analytical layers
       for the Human Cell Atlas data'
     year: '2026'
+  EiG5GBEAAAAJ:KlAtU1dfN6UC:
+    citations: 1
+    title: Preserving tissue structure through density-based spatial analysis with
+      scider
+    year: '2025'
   EiG5GBEAAAAJ:5nxA0vEk-isC:
     citations: 1
     title: Spatial profiling of the tumor microenvironment in head and neck squamous
@@ -122,18 +132,13 @@ papers:
     year: '2026'
   EiG5GBEAAAAJ:ULOm3_A8WrAC:
     citations: 0
-    title: 'DOMINO: diffusion-optimised graph learning identifies domain structures
+    title: 'DOMINO: graph diffusion learning identifies spatial domain structures
       with enhanced accuracy and scalability'
     year: '2025'
   EiG5GBEAAAAJ:Zph67rFs4hoC:
     citations: 0
     title: Spatial Multiomic Profiling Identifies Metabolic and Inflammatory Signatures
       Driving Recurrence in Adjuvant-Treated NSCLC
-    year: '2025'
-  EiG5GBEAAAAJ:KlAtU1dfN6UC:
-    citations: 0
-    title: Preserving tissue structure through density-based spatial analysis with
-      scider
     year: '2025'
   EiG5GBEAAAAJ:8k81kl-MbHgC:
     citations: 0
@@ -144,10 +149,6 @@ papers:
     citations: 0
     title: 'standR: a Bioconductor package for analysing transcriptomic Nanostring
       GeoMx DSP data'
-    year: '2023'
-  EiG5GBEAAAAJ:_FxGoFyzp5QC:
-    citations: 0
-    title: Tianyi Zhao, Harbin Institute of Technology, China
     year: '2023'
   EiG5GBEAAAAJ:W7OEmFMy1HYC:
     citations: 0
