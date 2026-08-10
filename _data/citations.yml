@@ -1,6 +1,6 @@
 metadata:
-  last_updated: '2026-08-03'
-  total_citations: 485
+  last_updated: '2026-08-10'
+  total_citations: 490
   hindex: 10
   i10index: 11
 papers:
@@ -9,11 +9,11 @@ papers:
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 88
+    citations: 89
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 49
+    citations: 51
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
@@ -21,17 +21,17 @@ papers:
     title: Transcriptomic profiling of cardiac tissues from SARS‐CoV‐2 patients identifies
       DNA Damage
     year: '2023'
+  EiG5GBEAAAAJ:kNdYIx-mwKoC:
+    citations: 36
+    title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
+      insights into immunotherapy response'
+    year: '2024'
   EiG5GBEAAAAJ:eQOLeE2rZwMC:
     citations: 36
     title: Compartmentalized spatial profiling of the tumor microenvironment in head
       and neck squamous cell carcinoma identifies immune checkpoint molecules and
       tumor necrosis factor …
     year: '2023'
-  EiG5GBEAAAAJ:kNdYIx-mwKoC:
-    citations: 34
-    title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
-      insights into immunotherapy response'
-    year: '2024'
   EiG5GBEAAAAJ:2osOgNQ5qMEC:
     citations: 24
     title: 'Molecular insights into regulatory T-cell adaptation to self, environment,
