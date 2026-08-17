@@ -1,15 +1,15 @@
 metadata:
-  last_updated: '2026-08-10'
-  total_citations: 490
+  last_updated: '2026-08-17'
+  total_citations: 495
   hindex: 10
   i10index: 11
 papers:
   EiG5GBEAAAAJ:Se3iqnhoufwC:
-    citations: 98
+    citations: 100
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 89
+    citations: 91
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
@@ -88,7 +88,7 @@ papers:
       array analyses
     year: '2019'
   EiG5GBEAAAAJ:-f6ydRqryjwC:
-    citations: 1
+    citations: 2
     title: DNA methylation reprogramming in marsupial embryos is restricted to the
       extraembryonic lineage
     year: '2026'
