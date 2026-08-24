@@ -1,6 +1,6 @@
 metadata:
-  last_updated: '2026-08-17'
-  total_citations: 495
+  last_updated: '2026-08-24'
+  total_citations: 498
   hindex: 10
   i10index: 11
 papers:
@@ -13,7 +13,7 @@ papers:
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 51
+    citations: 52
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
@@ -22,7 +22,7 @@ papers:
       DNA Damage
     year: '2023'
   EiG5GBEAAAAJ:kNdYIx-mwKoC:
-    citations: 36
+    citations: 37
     title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
       insights into immunotherapy response'
     year: '2024'
@@ -33,7 +33,7 @@ papers:
       tumor necrosis factor …
     year: '2023'
   EiG5GBEAAAAJ:2osOgNQ5qMEC:
-    citations: 24
+    citations: 25
     title: 'Molecular insights into regulatory T-cell adaptation to self, environment,
       and host tissues: Plasticity or loss of function in autoimmune disease'
     year: '2020'
@@ -61,7 +61,7 @@ papers:
     citations: 9
     title: 'hoodscanR: profiling single-cell neighborhoods in spatial transcriptomics
       data'
-    year: '2024'
+    year: '2026'
   EiG5GBEAAAAJ:0EnyYjriUFMC:
     citations: 8
     title: In situ single-cell profiling sheds light on IFI27 localisation during
