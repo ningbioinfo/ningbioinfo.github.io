@@ -1,15 +1,15 @@
 metadata:
-  last_updated: '2026-09-14'
-  total_citations: 511
+  last_updated: '2026-09-21'
+  total_citations: 517
   hindex: 10
   i10index: 11
 papers:
   EiG5GBEAAAAJ:Se3iqnhoufwC:
-    citations: 102
+    citations: 104
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 94
+    citations: 97
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
@@ -38,7 +38,7 @@ papers:
       and host tissues: Plasticity or loss of function in autoimmune disease'
     year: '2020'
   EiG5GBEAAAAJ:zYLM7Y9cAGgC:
-    citations: 24
+    citations: 25
     title: 'vissE: a versatile tool to identify and visualise higher-order molecular
       phenotypes from functional enrichment analysis'
     year: '2024'
