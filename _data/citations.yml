@@ -1,6 +1,6 @@
 metadata:
-  last_updated: '2026-09-21'
-  total_citations: 517
+  last_updated: '2026-09-28'
+  total_citations: 520
   hindex: 10
   i10index: 11
 papers:
@@ -13,21 +13,21 @@ papers:
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 52
+    citations: 53
     title: Library size confounds biology in spatial transcriptomics data
+    year: '2024'
+  EiG5GBEAAAAJ:kNdYIx-mwKoC:
+    citations: 41
+    title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
+      insights into immunotherapy response'
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
     citations: 41
     title: Transcriptomic profiling of cardiac tissues from SARS‐CoV‐2 patients identifies
       DNA Damage
     year: '2023'
-  EiG5GBEAAAAJ:kNdYIx-mwKoC:
-    citations: 40
-    title: 'Spatial dynamics of tertiary lymphoid aggregates in head and neck cancer:
-      insights into immunotherapy response'
-    year: '2024'
   EiG5GBEAAAAJ:eQOLeE2rZwMC:
-    citations: 37
+    citations: 38
     title: Compartmentalized spatial profiling of the tumor microenvironment in head
       and neck squamous cell carcinoma identifies immune checkpoint molecules and
       tumor necrosis factor …
