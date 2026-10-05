@@ -1,19 +1,19 @@
 metadata:
-  last_updated: '2026-09-28'
-  total_citations: 520
+  last_updated: '2026-10-05'
+  total_citations: 527
   hindex: 10
-  i10index: 11
+  i10index: 12
 papers:
   EiG5GBEAAAAJ:Se3iqnhoufwC:
-    citations: 104
+    citations: 106
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 97
+    citations: 98
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 53
+    citations: 55
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:kNdYIx-mwKoC:
@@ -52,16 +52,16 @@ papers:
     title: Parallel recovery of chromatin accessibility and gene expression dynamics
       from frozen human regulatory T cells
     year: '2023'
+  EiG5GBEAAAAJ:MXK_kJrjxJIC:
+    citations: 10
+    title: 'hoodscanR: profiling single-cell neighborhoods in spatial transcriptomics
+      data'
+    year: '2026'
   EiG5GBEAAAAJ:UeHWp8X0CEIC:
     citations: 10
     title: '3DFAACTS-SNP: using regulatory T cell-specific epigenomics data to uncover
       candidate mechanisms of type 1 diabetes (T1D) risk'
     year: '2022'
-  EiG5GBEAAAAJ:MXK_kJrjxJIC:
-    citations: 9
-    title: 'hoodscanR: profiling single-cell neighborhoods in spatial transcriptomics
-      data'
-    year: '2026'
   EiG5GBEAAAAJ:0EnyYjriUFMC:
     citations: 9
     title: In situ single-cell profiling sheds light on IFI27 localisation during
@@ -77,16 +77,16 @@ papers:
     title: Effects of a bitter substance, denatonium benzoate, on pancreatic hormone
       secretion
     year: '2024'
+  EiG5GBEAAAAJ:9yKSN-GCB0IC:
+    citations: 5
+    title: Quality control measures for placental sample purity in DNA methylation
+      array analyses
+    year: '2019'
   EiG5GBEAAAAJ:roLk4NBRz8UC:
     citations: 4
     title: 'vissE. cloud: a webserver to visualise higher order molecular phenotypes
       from enrichment analysis'
     year: '2023'
-  EiG5GBEAAAAJ:9yKSN-GCB0IC:
-    citations: 4
-    title: Quality control measures for placental sample purity in DNA methylation
-      array analyses
-    year: '2019'
   EiG5GBEAAAAJ:-f6ydRqryjwC:
     citations: 2
     title: DNA methylation reprogramming in marsupial embryos is restricted to the
