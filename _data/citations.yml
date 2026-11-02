@@ -1,19 +1,19 @@
 metadata:
-  last_updated: '2026-10-26'
-  total_citations: 545
-  hindex: 10
+  last_updated: '2026-11-02'
+  total_citations: 549
+  hindex: 11
   i10index: 12
 papers:
   EiG5GBEAAAAJ:Se3iqnhoufwC:
-    citations: 110
+    citations: 109
     title: Transient naive reprogramming corrects hiPS cells functionally and epigenetically
     year: '2023'
   EiG5GBEAAAAJ:UebtZRa9Y70C:
-    citations: 99
+    citations: 100
     title: 'standR: spatial transcriptomic analysis for GeoMx DSP data'
     year: '2024'
   EiG5GBEAAAAJ:WF5omc3nYNoC:
-    citations: 58
+    citations: 61
     title: Library size confounds biology in spatial transcriptomics data
     year: '2024'
   EiG5GBEAAAAJ:Tyk-4Ss8FVUC:
@@ -53,7 +53,7 @@ papers:
       from frozen human regulatory T cells
     year: '2023'
   EiG5GBEAAAAJ:MXK_kJrjxJIC:
-    citations: 10
+    citations: 11
     title: 'hoodscanR: profiling single-cell neighborhoods in spatial transcriptomics
       data'
     year: '2024'
